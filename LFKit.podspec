@@ -127,8 +127,8 @@ Pod::Spec.new do |s|
   # ss.public_header_files  = 'LFKit/LFKit/Component/**/*.h'
 
     ss.subspec 'LFBadge' do |sss|
-	  sss.source_files         = 'LFKit/LFKit/Component/LFBadge/*'
-  	end
+      sss.source_files         = 'LFKit/LFKit/Component/LFBadge/*'
+      end
 
     ss.subspec 'LFBubbleView' do |sss|
     sss.source_files         = 'LFKit/LFKit/Component/LFBubbleView/*'
@@ -145,7 +145,7 @@ Pod::Spec.new do |s|
     end
 
     ss.subspec 'LFErrorView' do |sss|
-    sss.source_files         = 'LFKit/LFKit/Component/LFErrorView/*'
+    sss.source_files         = 'LFKit/LFKit/Component/LFErrorView/*.{h,m}'
     sss.resources = 'LFKit/LFKit/Component/LFErrorView/*.{png}'
     end
 
@@ -216,7 +216,7 @@ Pod::Spec.new do |s|
     end
 
     ss.subspec 'LFPicturesCollectionView' do |sss|
-    sss.source_files         = 'LFKit/LFKit/Component/LFPicturesCollectionView/*'
+    sss.source_files         = 'LFKit/LFKit/Component/LFPicturesCollectionView/*.{h,m}'
     sss.resources = 'LFKit/LFKit/Component/LFPicturesCollectionView/*.{png}'
     sss.dependency 'LFKit/Component/LFPhotoBrowser'
     sss.dependency 'LFKit/Category/UIViewController+LF'
